@@ -108,6 +108,7 @@ a {
 }
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -258,6 +259,10 @@ a {
   border-radius: 8px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  transition: all ease 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 .card__header,
 .card__body {
@@ -270,4 +275,60 @@ a {
 .card--secondary .card__header {
   background-color: var(--color-secondary);
   color: #fff;
+}
+
+.card--secondary .badge--secondary {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+/*TODO plans */
+
+.plan__name {
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  font-weight: 2.4rem;
+}
+.plan__price {
+  font-size: 6rem;
+}
+.plan__biling-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url('../images/popular.svg');
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__biling-cycle {
+    font-size: 1.6rem;
+  }
 }

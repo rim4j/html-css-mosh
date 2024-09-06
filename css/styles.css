@@ -199,8 +199,8 @@ a {
 }
 
 .btn:hover {
-  /* filter: brightness(150%); */
-  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  filter: brightness(130%);
+  /* box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2); */
 }
 
 .btn--primary {
@@ -214,6 +214,10 @@ a {
 }
 .btn--accent {
   background-color: var(--color-accent);
+  color: #fff;
+}
+.btn--heading {
+  background-color: var(--color-heading);
   color: #fff;
 }
 
@@ -287,6 +291,10 @@ a {
 .card:hover {
   transform: scale(1.1);
 }
+.scale {
+  transform: scale(1.1);
+}
+
 .card__header,
 .card__body {
   padding: 2rem 3rem;
@@ -651,4 +659,17 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+}
+
+.card--primary .badge--primary {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+.block-plans .grid {
+  gap: 8rem 5rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
